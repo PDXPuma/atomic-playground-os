@@ -14,12 +14,11 @@ dnf5 install -y tmux
 
 # Use a COPR Example:
 #
-# dnf5 -y copr enable ublue-os/staging
-# dnf5 -y install package
+ dnf5 -y copr enable ryanabx/cosmic-epoch
+ dnf5 -y install @cosmic-desktop-environment
 # Disable COPRs so they don't end up enabled on the final image:
-# dnf5 -y copr disable ublue-os/staging
+ dnf5 -y copr disable ryanabx/cosmic-epoch
 
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-systemctl disable cosmic-greeter
