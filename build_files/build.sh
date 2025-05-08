@@ -12,7 +12,7 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux 
 dnf5 install -y emacs
-dnf5 install -y @base-x gcc libXft-devel libX11-devel libXinerama-devel arandr xorg-x11-xinit-session
+dnf5 install -y @base-x gcc libXft-devel libX11-devel libXinerama-devel arandr xorg-x11-xinit-session arandr
 
 # Use a COPR Example:
 #
